@@ -781,13 +781,13 @@
             </div>
             <div class="symptoms">
                 <button type="button" onclick="selectSymptom(this)" data-category="フェイシャル"
-                    data-price="15000">雪美人フェイシャル(15,000円(税抜)/80分)</button>
+                    data-price="15000">雪美人フェイシャル</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="フェイシャル"
-                    data-price="15000">リディアフェイシャル(15,000円(税抜)/80分)</button>
+                    data-price="15000">リディアフェイシャル</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="フェイシャル"
-                    data-price="7500">ナチュラルフェイシャル(7,500円(税抜)/50分)</button>
+                    data-price="7500">ナチュラルフェイシャル</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="フェイシャル"
-                    data-price="8000">エレクトロ×エラはがし小顔矯正(8,000円(税抜)/60分)</button>
+                    data-price="8000">エレクトロ×エラはがし小顔矯正</button>
             </div>
         </div>
         <div id="female" class="menu-section">
@@ -796,19 +796,19 @@
             </div>
             <div class="symptoms">
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディケア"
-                    data-price="15000">動脈マッサージ(15,000円(税抜)/80分)</button>
+                    data-price="15000">動脈マッサージ</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディケア"
-                    data-price="15000">オイルトリートメント((税抜)/80分)</button>
+                    data-price="15000">オイルトリートメント</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディケア"
-                    data-price="15000">スーパーセル(5,000円(税抜)/30分)</button>
+                    data-price="15000">スーパーセル</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディケア"
-                    data-price="15000">スーパーセラ(5,000円(税抜)/30分)</button>
+                    data-price="15000">スーパーセラ</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディケア"
-                    data-price="15000">パイラソード(10,000円(税抜)/60分)</button>
+                    data-price="15000">パイラソード</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディケア"
-                    data-price="15000">エレクトロ肩甲骨はがし(10,000円(税抜)/60分)</button>
+                    data-price="15000">エレクトロ肩甲骨はがし</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディケア"
-                    data-price="15000">おまかせコース(8,000円(税抜)/90分)</button>
+                    data-price="15000">おまかせコース</button>
             </div>
         </div>
 
@@ -818,11 +818,11 @@
             </div>
             <div class="symptoms">
                 <button type="button" onclick="selectSymptom(this)" data-category="特殊メニュー"
-                    data-price="15000">美容整体フェイシャル(3,750円(税抜)/30分)</button>
+                    data-price="15000">美容整体フェイシャル</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="特殊メニュー"
-                    data-price="15000">美容整体ボディ(7,500円(税抜)/60分)</button>
+                    data-price="15000">美容整体ボディ</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="特殊メニュー"
-                    data-price="15000">美容整体全身(10,000(税抜)/90分)</button>
+                    data-price="15000">美容整体全身</button>
             </div>
         </div>
 
@@ -902,13 +902,20 @@
         });
 
         let menuTimes = {
-            '和装プラン〈30分〉': 30,
-            '洋装プランA〈60分〉': 60,
-            '洋装プランB〈120分〉': 420,
-            '洋装プランC〈30分〉': 30,
-            'リラックスコース〈60分〉': 60,
-            'ベーシックコース〈30分〉': 30,
-            'スピードコース〈90分〉': 90
+            '雪美人フェイシャル': 90,
+            'リディアフェイシャル': 90,
+            'ナチュラルフェイシャル': 60,
+            'エレクトロ×エラはがし小顔矯正': 70,
+            '動脈マッサージ': 90,
+            'オイルトリートメント': 90,
+            'スーパーセル': 40,
+            'スーパーセラ': 40,
+            'パイラソード': 70,
+            'エレクトロ肩甲骨はがし': 70,
+            'おまかせコース': 100,
+            '美容整体フェイシャル': 40,
+            '美容整体ボディ': 70,
+            '美容整体全身': 100
         };
 
 
@@ -1270,7 +1277,7 @@
                 return;
             }
 
-            const url = 'https://script.google.com/macros/s/AKfycbziCwz5spVPXdctd9OUfwfeBmZ1t9_CLOKiKjLT9r7F-EwEdZTmaNOpJQTeoi2dBU1K/exec' +
+            const url = 'https://script.google.com/macros/s/AKfycbxJhsAvR9BKs6tFoX9NaN1QYUqprKO6YU3NRNauhEjTGYbeiRRMrDO9xq2bvuZPJ0K7/exec' +
                 `?startTime=${startTime.toISOString()}&endTime=${endTime.toISOString()}`;
 
             try {
